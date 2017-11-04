@@ -1,0 +1,64 @@
+
+crossdomain:
+  origins:
+    - http://localhost:4200
+    - http://10.2.0.*:4200
+    - http://127.0.0.1:4200
+    - http://localhost:8080
+    - http://10.2.0.*:8080
+    - http://127.0.0.1:8080
+    - http://localhost:8081
+    - http://10.2.0.*:8081
+    - http://127.0.0.1:8081
+    - http://10.2.0.93:8081
+    - http://10.2.0.221:80
+    - http://localhost:80
+    - http://127.0.0.1:80
+    - http://10.2.0.93:80
+    - http://10.2.0.221
+  mapping: /**
+  methods:
+    - POST
+    - PUT
+    - DELETE
+    - GET
+    - UPDATE
+# ===============================
+# = JPA / HIBERNATE
+# ===============================
+
+# Use spring.jpa.properties.* for Hibernate native properties (the prefix is
+# stripped before adding them to the entity manager).
+
+# Show or not log for each sql query
+spring:
+  jpa:
+    show-sql: true
+
+# Hibernate ddl auto (create, create-drop, update): with "update" the database
+# schema will be automatically updated accordingly to java entities found in
+# the project
+    hibernate:
+      ddl-auto: update
+
+# Naming strategy
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+# Allows Hibernate to generate SQL optimized for a particular DBMS
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+
+#database conf
+  datasource:
+    url: jdbc:mysql://127.0.0.1/shopping
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+
+#swagger
+swagger:
+  path:
+    - /login/.*
