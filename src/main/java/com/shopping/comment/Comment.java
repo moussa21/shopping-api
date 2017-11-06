@@ -48,10 +48,11 @@ public class Comment {
 	 * @param userId
 	 * @param rating
 	 */
-	public Comment(String description, Long userId, Integer rating) {
+	public Comment(String description, Product product, Long userId, Integer rating) {
 		this.description = description;
 		this.userId = userId;
 		this.rating = rating;
+		this.product = product;
 	}
 
 	public Long getCommentId() {
@@ -84,6 +85,20 @@ public class Comment {
 
 	public void setRating(Integer rating) {
 		this.rating = rating;
+	}
+
+	/**
+	 * @return the product
+	 */
+	public Product getProduct() {
+		return product;
+	}
+
+	/**
+	 * @param product the product to set
+	 */
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 }

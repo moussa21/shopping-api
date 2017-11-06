@@ -6,7 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.validator.constraints.Email;
 
 @Entity
 @Table(name = "User")
@@ -22,7 +21,7 @@ public class User {
 	
 	private String phone;
 	
-	private Email email;
+	private String email;
 
 	/**
 	 * 
@@ -36,7 +35,7 @@ public class User {
 	 * @param phone
 	 * @param email
 	 */
-	public User(String name, String firstName, String phone, Email email) {
+	public User(String name, String firstName, String phone, String email) {
 		this.name = name;
 		this.firstName = firstName;
 		this.phone = phone;
@@ -102,14 +101,14 @@ public class User {
 	/**
 	 * @return the email
 	 */
-	public Email getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
 	/**
 	 * @param mail the email to set
 	 */
-	public void setEmail(Email email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 	

@@ -44,13 +44,13 @@ public class Product {
 	
 
     /**
-     * List of work to do in the term
+     * List of images to do in the term
      */
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Image> images;
 	
     /**
-     * List of work to do in the term
+     * List of comment to do in the term
      */
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Comment> comments;
