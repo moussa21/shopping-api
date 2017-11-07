@@ -1,4 +1,4 @@
-package com.shopping.user.entity;
+package com.shopping.user.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,12 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Entity
-@Table(name = "User")
-public class User {
+public class UserDTO {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	private Long userId;
 	
 	private String name;
@@ -26,7 +23,7 @@ public class User {
 	/**
 	 * 
 	 */
-	public User() {
+	public UserDTO() {
 	}
 
 	/**
@@ -35,7 +32,7 @@ public class User {
 	 * @param phone
 	 * @param email
 	 */
-	public User(String name, String firstName, String phone, String email) {
+	public UserDTO(String name, String firstName, String phone, String email) {
 		this.name = name;
 		this.firstName = firstName;
 		this.phone = phone;

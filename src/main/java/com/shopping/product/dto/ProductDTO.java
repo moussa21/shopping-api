@@ -1,11 +1,10 @@
-package com.shopping.product.DTO;
+package com.shopping.product.dto;
 
 import java.util.List;
 
-
-import com.shopping.category.DTO.CategoryDTO;
-import com.shopping.comment.DTO.CommentDTO;
-import com.shopping.image.DTO.ImageDTO;
+import com.shopping.category.dto.CategoryDTO;
+import com.shopping.comment.dto.CommentDTO;
+import com.shopping.image.dto.ImageDTO;
 
 
 public class ProductDTO {

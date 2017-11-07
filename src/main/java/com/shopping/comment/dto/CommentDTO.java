@@ -1,4 +1,4 @@
-package com.shopping.comment.DTO;
+package com.shopping.comment.dto;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import com.shopping.product.DTO.ProductDTO;
+import com.shopping.product.dto.ProductDTO;
 import com.shopping.product.entity.Product;
 
 public class CommentDTO {

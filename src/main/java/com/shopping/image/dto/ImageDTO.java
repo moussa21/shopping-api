@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.shopping.image.DTO;
+package com.shopping.image.dto;
 
 import java.sql.Blob;
 
@@ -13,7 +13,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.shopping.product.DTO.ProductDTO;
+import com.shopping.product.dto.ProductDTO;
 import com.shopping.product.entity.Product;
 
 /**

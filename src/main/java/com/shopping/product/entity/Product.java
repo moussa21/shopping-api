@@ -17,7 +17,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.shopping.category.entity.Category;
-import com.shopping.comment.Comment;
+import com.shopping.comment.entity.Comment;
 import com.shopping.image.entity.Image;
 
 /**

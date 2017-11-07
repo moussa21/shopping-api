@@ -1,4 +1,4 @@
-package com.shopping.category.DTO;
+package com.shopping.category.dto;
 
 
 /**

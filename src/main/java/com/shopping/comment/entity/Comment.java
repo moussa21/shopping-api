@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.shopping.comment;
+package com.shopping.comment.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
