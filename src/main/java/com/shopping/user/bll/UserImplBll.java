@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.shopping.user.dal.UserDal;
+import com.shopping.user.dto.UserDTO;
+import com.shopping.user.mapper.UserMapper;
 
 /**
  * @author mbalde
@@ -17,4 +19,12 @@ public class UserImplBll implements UserBll {
 
 	@Autowired
 	private UserDal userDal;
+	
+	@Autowired
+	private UserMapper userMapper;
+
+	@Override
+	public UserDTO saveUser(UserDTO userDTO) {
+		return userMapper.mapToUserDTO(userDal.save(userMapper.mapToUser(userDTO)));
+	}
 }
