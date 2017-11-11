@@ -1,8 +1,11 @@
 package com.shopping.category.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.shopping.category.dto.CategoryDTO;
 import com.shopping.category.entity.Category;
 
+@Component
 public class CategoryImplMapper implements CategoryMapper {
 
 	@Override

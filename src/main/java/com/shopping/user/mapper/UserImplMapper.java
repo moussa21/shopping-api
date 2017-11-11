@@ -1,8 +1,10 @@
 package com.shopping.user.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.shopping.user.dto.UserDTO;
 import com.shopping.user.entity.User;
-
+@Component
 public class UserImplMapper implements UserMapper{
 
 	@Override

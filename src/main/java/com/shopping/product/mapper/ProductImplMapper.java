@@ -1,8 +1,10 @@
 package com.shopping.product.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.shopping.product.dto.ProductDTO;
 import com.shopping.product.entity.Product;
-
+@Component
 public class ProductImplMapper implements ProductMapper {
 
 	@Override
